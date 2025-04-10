@@ -1,0 +1,97 @@
+.dashboard-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+/* ---------- LEFT PANEL ---------- */
+.left-panel {
+  width: 260px;
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 20px;
+}
+
+.left-panel h2 {
+  margin-bottom: 10px;
+}
+
+.left-panel .social-links a {
+  display: block;
+  color: #4fc3f7;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+/* ---------- DASHBOARD MAIN ---------- */
+.dashboard-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fff;
+  color: #000;
+}
+
+.progress-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.progress-item {
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.progress-bar {
+  background: #ddd;
+  height: 8px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4caf50;
+  border-radius: 5px;
+}
+
+.start-course-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* ---------- DARK MODE SUPPORT ---------- */
+.dashboard-wrapper.dark .left-panel {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+.dashboard-wrapper.dark .dashboard-container {
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+.dashboard-wrapper.dark .progress-item {
+  background: #374151;
+  color: #f9fafb;
+}
+
+.dashboard-wrapper.dark .progress-bar {
+  background: #4b5563;
+}
+
+.dashboard-wrapper.dark .progress-fill {
+  background: #10b981;
+}
+
+.dashboard-wrapper.dark .start-course-btn {
+  background: #2563eb;
+  color: #fff;
+}
